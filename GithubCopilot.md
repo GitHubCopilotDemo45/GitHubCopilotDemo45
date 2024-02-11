@@ -9,8 +9,8 @@ code .
 **Start playing with GitHub Copilot**
 Once you start typing a prompt and copilot generate proposals, you can use the following shortcuts to interact with Copilot:
 
-. tab to accept the current suggestion entirely (most common)
-. ctrl + right arrow to accept word by word the suggestion (for partial use)
-. alt + ^ to move to next suggestion
-. shift + tab to go back to the previous suggestion
-. ctrl+enter to display the copilot pane
+- tab to accept the current suggestion entirely (most common)
+- ctrl + right arrow to accept word by word the suggestion (for partial use)
+- alt + ^ to move to next suggestion
+- shift + tab to go back to the previous suggestion
+- ctrl+enter to display the copilot pane
