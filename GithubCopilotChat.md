@@ -137,9 +137,10 @@ Agents are like specialized experts who can assist you with specific tasks. You 
 They may not be super rich for the moment but their features will continue to grow over the time. Here are some example
 
 Open the side Chat panel and type **@workspace /New* to specify that you want to create a new project. For instance, try to create an Asp.Net project
+
 ```
-> @workspace /new create a new asp.net core 6.0 project, with three views Index, Users and products.
-``
+ @workspace /new create a new asp.net core 6.0 project, with three views Index, Users and products.
+```
 
 It should create a structured project and even a new button to create the file. Click on "Create workspace" to see files being created.
 
