@@ -1,29 +1,25 @@
-Use Copilot Chat to improve code quality #
+**Use Copilot Chat to improve code quality**
+
 GitHub Copilot is a generative AI and thus, perfect to generate code, but it has powerfull analysis capabilities on your code that can be used in several case to improve code quality like: find security issues, bad practices in your code and générate a fix, refactor and add comment to legacy code, generate tests, etc...
 
-If you already feel confortable with it you can jump to the next section.
-
 Let's Start #
+
 To start using Github Copilot Chat, you first need to:
 
-Have a valid GitHub Copilot license (personal, business or enterprise).
-Install the extension in your IDE. For VS Code, you can find it directly by searching for Github Copilot Chat in the extensions tab.
-Clone the repository #
+- Have a valid GitHub Copilot license (personal, business or enterprise).
+- Install the extension in your IDE. For VS Code, you can find it directly by searching for Github Copilot Chat in the extensions tab.
+  
+**Clone the repository**
+
 We will use the same repository as the previous section to show how to use Copilot Chat to improve code quality. If you already have it, you can skip this step.
 
-You need to clone the following GitHub Repository: Github Copilot Demo
+**Start playing with the Chat**
 
-This repository is a code starter that will help you experiment all capabilities with GitHub Copilot. Take the time to look at the architecture design displayed on the page and when you're ready, clone the repository from the command line and open it in VS Code.
-
-git clone https://github.com/Philess/gh-copilot-demo
-cd gh-copilot-demo
-code .
-
-Start playing with the Chat #
 Once Copilot Chat is setup, you can start using it:
 
-by accessing the chat view from the left toolbar of your IDE (chat icon)
-by pressing Ctrl + Shift + i shortcut for a quick inline question to the chat
+- by accessing the chat view from the left toolbar of your IDE (chat icon)
+- by pressing Ctrl + Shift + i shortcut for a quick inline question to the chat
+  
 The first one is a sticky version, very usefull to keep the chat open and ask questions to copilot. The second one is a quick way to ask a question and get an answer and launch commands.
 
 Chat View #
