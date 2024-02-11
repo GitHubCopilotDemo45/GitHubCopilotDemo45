@@ -154,7 +154,7 @@ GitHub Copilot Chat is very handful but for a developer, leaving the keyboard an
 
 2- Use the shortcut Ctrl + i. It should open the Quick chat popup, a small chat windows where you put your cursor
 
-![Screenshot of a comment on a GitHub issue showing an image](https://github.com/GitHubCopilotDemo45/GitHubCopilotDemo45/blob/main/quickchat.png)
+![Screenshot of a comment on a GitHub issue showing an image](https://github.com/GitHubCopilotDemo45/GitHubCopilotDemo45/blob/main/quickchat2.png)
 
 3- Type any command to generate some code (i.e. "Create a C# class named Toto). The generated code is injected inside the current file which may be what you want
 
