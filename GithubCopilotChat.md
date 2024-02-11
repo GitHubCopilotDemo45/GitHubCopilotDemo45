@@ -144,6 +144,8 @@ Open the side Chat panel and type **@workspace /New* to specify that you want to
 
 It should create a structured project and even a new button to create the file. Click on "Create workspace" to see files being created.
 
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.]([https://myoctocat.com/assets/images/base-octocat.svg](https://github.com/GitHubCopilotDemo45/GitHubCopilotDemo45/blob/main/agents.png)
+
 **Tips**
 
 GitHub Copilot Chat is very handful but for a developer, leaving the keyboard and having to take the mouse to open the right Chat tab can be boring. You can directly call the Chat inside the code editor.
@@ -152,8 +154,12 @@ GitHub Copilot Chat is very handful but for a developer, leaving the keyboard an
 
 2- Use the shortcut Ctrl + i. It should open the Quick chat popup, a small chat windows where you put your cursor
 
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.]([https://myoctocat.com/assets/images/base-octocat.svg](https://github.com/GitHubCopilotDemo45/GitHubCopilotDemo45/blob/main/agents.png)
+
 3- Type any command to generate some code (i.e. "Create a C# class named Toto). The generated code is injected inside the current file which may be what you want
 
 4- Instead of accepting the solution, click on the Discard button and select Discard to new file. It will move the generated content to a new empty file
+
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.]([https://myoctocat.com/assets/images/base-octocat.svg](https://github.com/GitHubCopilotDemo45/GitHubCopilotDemo45/blob/main/agents.png)
 
 Discard to new file
