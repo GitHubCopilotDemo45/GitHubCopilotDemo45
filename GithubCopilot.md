@@ -48,19 +48,19 @@ Open file album-viewer/lang/translations.json
 
 Create a new album-viewer/utils/validators.ts file and start with the prompt:
 
-// validate date from text input in french format and convert it to a date object
+> // validate date from text input in french format and convert it to a date object
 
 Copilot can help you also to write RegExp patterns. Try these:
 
-// function that validates the format of a GUID string
+> // function that validates the format of a GUID string
 
-// function that validates the format of a IPV6 address string
+> // function that validates the format of a IPV6 address string
 
 **Discover new tool and library on the job with Copilot**
 
 Still on the same album-viewer/utils/validators.ts file add the following prompt:
 
-// validate phone number from text input and extract the country code
+> // validate phone number from text input and extract the country code
 
 > For this one it will probably give you proposal that call some methods not defined here and needed to be defined. It's a good opportunity to explore the alternatives using the ctrl+enter shortcut to display the > copilot pane.
 > You can choose one that uses something that looks like coming for an external library and use copilot to import it showing that the tool helps you discover new things.
@@ -190,25 +190,27 @@ describe('validateDate', () => {
 You can add other it block to add more test cases and also add the tests for the other functions. For example try add a new it block for the validateDate function to test that it throws and error when given en empty string.
 
 **Writing documentation**
+
 Copilot can understand a natural language prompt and generate code and because it's just language to it, it can also understand code and explain it in natural language to help you document your code. So it can help you in all your documentation tasks. It can generate simple documentation comment or standardized documentation comment like JavaDoc, JsDoc, etc... it can also help you translate your documentation in different languages. Let's see how it works.
 
 **simple documentation comment**
 To see that just put you pointer on top of a Class, a method or any line of code and start typing the comment handler for the selected language to trigger copilot. In language like Java, C# or TS for example, just type //and let the magic happen.
 
 Here is an example in the albums-viewer/routes/index.js file. Insert a line and start typing on line 13 inside the try block
-
+```
 router.get("/", async function (req, res, next) {
   try {
     // Invoke the album-api via Dapr
     const url = `http://127.0.0.1:${DaprHttpPort}/v1.0/invoke/${AlbumService}/method/albums`;
-
+```
 Continue to play with it and see what happens on other pieces of code.
 
 **standardized documentation comment (JavaDoc, JsDoc, etc...)**
 For this one, to trigger the documentation comment generation, you need to respect the specific comment format:
 
-/** (for JS/TS) in the index.js file for example
-/// for C# in the AlbumController.cs of the AlbumApi file for example
+- /** (for JS/TS) in the index.js file for example
+- /// for C# in the AlbumController.cs of the AlbumApi file for example
+  ```
 /// <summary>
 /// function that returns a single album by id
 /// </summary>
@@ -216,15 +218,16 @@ For this one, to trigger the documentation comment generation, you need to respe
 /// <returns></returns>
 [HttpGet("{id}")]
 public IActionResult Get(int id)
-
+```
 **Writing markdown and html documentation**
+
 Copilot is also very powerfull to help you write documentation. It can generate markdown and html code and accelerate the writing of your readme.md files like for this one for example.
 
 You can show that by creating a new file demo.md in the root of the project and start typing the following prompt:
 
-# Github Copilot documentation
-This documentation is generated with Github Copilot to show what the tool can do.
+> # Github Copilot documentation
+> This documentation is generated with Github Copilot to show what the tool can do.
 
-##
+> ##
 
 From there by starting a new line with a secondary level title it will start generating the content of the documentation and it will showcase how it will accelerate the documentation writing process.
