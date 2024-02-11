@@ -14,3 +14,20 @@ Once you start typing a prompt and copilot generate proposals, you can use the f
 - alt + ^ to move to next suggestion
 - shift + tab to go back to the previous suggestion
 - ctrl+enter to display the copilot pane
+
+**Natural Language Translations**
+Automate text completion
+
+Open file album-viewer/lang/translations.json
+
+[
+    {
+        "language": "en",
+        "values": {
+            "main-title": "Welcome to the world of the future",
+            "main-subtitle": "The future is now with copilot",
+            "main-button": "Get started"
+        }
+    }
+]
+
