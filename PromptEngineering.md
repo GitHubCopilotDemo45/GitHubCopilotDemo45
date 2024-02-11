@@ -8,7 +8,7 @@ In the previous section you discovered how to use basic prompts to get code from
 
 Talking about prompt engineering, you can also use the chat to provide examples to Copilot. It's a good way to help Copilot understand what you want to do and generate better code. You can provide examples in the chat by typing with the validator.ts file open:
 
-> # one-shot programming
+> one-shot programming
 
 > Write me unit tests for phone number validators methods using mocha and chai in the current file.
 
@@ -18,7 +18,7 @@ Talking about prompt engineering, you can also use the chat to provide examples 
 
 > Organize test in logic suites and generate at least 4 positives tests and 2 negatives tests for each method.
 
-> # few-shot programming
+> few-shot programming
 
 > Write me unit tests for all validators methods using mocha and chai in the current file.
 
