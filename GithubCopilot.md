@@ -210,6 +210,7 @@ For this one, to trigger the documentation comment generation, you need to respe
 
 - /** (for JS/TS) in the index.js file for example
 - /// for C# in the AlbumController.cs of the AlbumApi file for example
+  
   ```
 /// <summary>
 /// function that returns a single album by id
