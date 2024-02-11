@@ -2,9 +2,11 @@ This first exercise needs you to clone the following GitHub Repository: [Github 
 
 This repository is a code starter that will help you experiment all capabilities with GitHub Copilot. 
 
+'''
 git clone https://github.com/Philess/gh-copilot-demo
 cd gh-copilot-demo
 code .
+'''
 
 **Start playing with GitHub Copilot**
 Once you start typing a prompt and copilot generate proposals, you can use the following shortcuts to interact with Copilot:
