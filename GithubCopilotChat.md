@@ -34,14 +34,19 @@ It's a more high level copilot than the vanilla copilot which is specialized on 
 Try it with a few questions like:
 
 > How to generate a random number in C#?
+
 > What is the best way to secure a route is ASP.NET Core?
+
 > What is the easiest way to generate a static website with NodeJS?
 
 Try it then with some of your code files in the repository. Open a file a try asking:
 
 > Can you explain me what this code does?
+
 > (with only part of the code selected) Can you explain me what the selected code does?
+
 > Can you generate a function that returns a random number between 1 and 10?
+
 > Can you add documentation commentes to this function?
 
 Try also using the questions suggestions that appears along the way.
