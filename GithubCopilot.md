@@ -68,96 +68,112 @@ Still on the same album-viewer/utils/validators.ts file add the following prompt
 **Complex algoritms generation**
 
 In the albums-api/Controllers/AlbumController.cs file try to complete the GetByID method by replace the current return:
+```
 // GET api/<AlbumController>/5
 [HttpGet("{id}")]
 public IActionResult Get(int id)
 {
     //here
 }
+```
 
 In the same file you can show other prompts like:
-// function that search album by name, artist or genre
 
-// function that sort albums by name, artist or genre
+> // function that search album by name, artist or genre
+
+> // function that sort albums by name, artist or genre
 
 **Big tasks vs small tasks**
+
 **Big Prompts and Short Prompts**
+
 Copilot will probably will always more effective with prompt to generate small but precisely described pieces of code rather than a whole class with a unique multiple lines prompt.
 
-The best strategy to generate big piece of code, is starting by the basic shell of your code with a simple prompt and then adding small pieces one by one.
+> The best strategy to generate big piece of code, is starting by the basic shell of your code with a simple prompt and then adding small pieces one by one.
 
 **Big prompts that could works**
 
-Back in the albums-viewer/utils add a new file viz.ts to create a function that generates a graphe. Here is a sample of prompt to do that:
-// generate a plot with d3js of the selling price of the album by year
-// x-axis are the month series and y-axis show the numbers of album selled
-// data from the sales of album are loaded in from an external source and are in json fo
-Copilot will probably try to complete the prompt by adding more details. You can try to add more details yourself or follow copilot's suggestions. When you want it to stop and start generating the code just jump on another line and let the copilot do its work.
+- Back in the albums-viewer/utils add a new file viz.ts to create a function that generates a graphe. Here is a sample of prompt to do that:
+  
+> // generate a plot with d3js of the selling price of the album by year
 
-Once you achieved to generate the code for the chart you probably see that your IDE warn you about the d3 object that is unknown. For that also Copilot helps. Return on top of the file and start typing import d3 to let copilot autocomplete
+> // x-axis are the month series and y-axis show the numbers of album selled
+
+> // data from the sales of album are loaded in from an external source and are in json format
+
+> Copilot will probably try to complete the prompt by adding more details. You can try to add more details yourself or follow copilot's suggestions. When you want it to stop and start generating the code just jump on another line and let the copilot do its work.
+
+- Once you achieved to generate the code for the chart you probably see that your IDE warn you about the d3 object that is unknown. For that also Copilot helps. Return on top of the file and start typing import d3 to let copilot autocomplete
+```  
 import d3 from "d3";
+```
 
 Look at what Copilot has been able to generate. It's possible that the code is working fine and does everything you asked for but also you probably hit the token limit and Copilot was not able to generate the whole code.
 
 It's because Copilot for autocompletion is not made for creating big pieces of code at once, but is more specialized in generating small pieces step by step.
+
 **Try again by build it step by step**
 
 Try to generate the code for the plot by cutting it into small pieces following the steps below:
-
+```
 import * as d3 from 'd3';
-
-// load the data from a json file and create the d3 svg in the then function
+```
+> // load the data from a json file and create the d3 svg in the then function
 
 Inside the then function, starts by setting up the basics of the plot
 
-// create the svg
+> // create the svg
 
-// create the scales for the x and y axis
-// x-axis are the month series and y-axis show the numbers of album selled
+> // create the scales for the x and y axis
 
-// create axes for the x and y axis
+> // x-axis are the month series and y-axis show the numbers of album selled
+
+> // create axes for the x and y axis
 
 From there you can just ask to copilot to complete the chart
 
-// generate a line chart based on the albums sales data
+> // generate a line chart based on the albums sales data
 
 You will always get better results by cutting big task into small chunks with copilot autocomplete. It's also a good way to show that copilot is not magic and you have to use it with your other IDE feature and your developer logic.
 
 **Tests**
 Copilot can help generate all kind of tests that are written with code. It Includes unit tests, integration tests, end to end tests, and load testing tests with jmeters scripts for example.
 
-Add a new file validators.test.ts in the albums-viewer/tests folder
+- Add a new file validators.test.ts in the albums-viewer/tests folder
 
-To have good test suggestion, you hould provide some basic informations to Copilot such as the test framework you want to use:
-
+- To have good test suggestion, you hould provide some basic informations to Copilot such as the test framework you want to use:
+```
 import { describe }
+```
 
 When you start typing the describe function, copilot will see you're in test file in TS and suggest you to import the describe and it functions from Mochai which is a famous test framework for JS/TS. Accept the suggestion and it will automatically suggest also the expect function from Chai: accept it also.
-
+```
 import {describe, it} from 'mocha';
 import {expect} from 'chai';
+```
 
 You have your test framework in place! Now just import the functions you want to test by starting a new line by import keyword copilot will see you are in a test file, to test some validators because of the name and it will suggest something like that:
-
+```
 import {validateAlbumId} from '../src/validators';
+```
 
 It looks ok but because Copilot doesn't have access to all your code, only the open tab and limited informations, you can see that both the path and the function name are wrong.
 ... At least he tried ...
 but it's a good way to show that Copilot is not magic and you have to use it with your other IDE feature and your brain :)
 
-Accept the suggestion and change the path. You will be able to have VS Code to give you the available function with the ctrl+space shortcut.
+- Accept the suggestion and change the path. You will be able to have VS Code to give you the available function with the ctrl+space shortcut.
 
-Add a comment with the first function you want to test and let the magic happen:
-
+- Add a comment with the first function you want to test and let the magic happen:
+```
 import {describe, it} from 'mocha';
 import {expect} from 'chai';
 
 import {validateDate, validateIPV6} from '../utils/validators';
 
 // test the validataDate function
-
+```
 Boom!
-
+```
 describe('validateDate', () => {
     it('should return a date object when given a valid date string', () => {
         const date = '01/01/2019';
@@ -170,7 +186,7 @@ describe('validateDate', () => {
         expect(() => validateDate(date)).to.throw();
     });
 });
-
+```
 You can add other it block to add more test cases and also add the tests for the other functions. For example try add a new it block for the validateDate function to test that it throws and error when given en empty string.
 
 **Writing documentation**
