@@ -144,7 +144,7 @@ Open the side Chat panel and type **@workspace /New* to specify that you want to
 
 It should create a structured project and even a new button to create the file. Click on "Create workspace" to see files being created.
 
-(https://github.com/GitHubCopilotDemo45/GitHubCopilotDemo45/blob/main/agents.png)
+![Screenshot of a comment on a GitHub issue showing an image](https://github.com/GitHubCopilotDemo45/GitHubCopilotDemo45/blob/main/agents.png)
 
 **Tips**
 
