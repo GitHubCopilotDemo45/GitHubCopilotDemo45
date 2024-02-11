@@ -140,9 +140,8 @@ Open the side Chat panel and type **@workspace /New* to specify that you want to
 ```
 > @workspace /new create a new asp.net core 6.0 project, with three views Index, Users and products.
 ``
-It should create a structured project and even a new button to create the file. Click on "Create workspace" to see files being created.
 
-GitHub Copilot Agents
+It should create a structured project and even a new button to create the file. Click on "Create workspace" to see files being created.
 
 **Tips**
 
@@ -151,8 +150,6 @@ GitHub Copilot Chat is very handful but for a developer, leaving the keyboard an
 1- Open any file containing code
 
 2- Use the shortcut Ctrl + i. It should open the Quick chat popup, a small chat windows where you put your cursor
-
-GitHub Copilot Quick Chat
 
 3- Type any command to generate some code (i.e. "Create a C# class named Toto). The generated code is injected inside the current file which may be what you want
 
