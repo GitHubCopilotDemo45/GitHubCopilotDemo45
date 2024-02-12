@@ -23,14 +23,14 @@ it('should return true if the phone number is a valid international number', () 
 
 > Write me unit tests for all validators methods using mocha and chai in the current file.
 
-> Use the following examples for positive test (test that should return true): 
+> Use the following examples for positive test (test that should return true):
+```
+it('should return true if the phone number is a valid international number', () => { expect(validatePhoneNumber('+33606060606')).to.be.true; });
 
-> it('should return true if the phone number is a valid international number', () => { expect(validatePhoneNumber('+33606060606')).to.be.true; });
+it('should return true if the phone number is a valid local american number', () => { expect(validatePhoneNumber('202-939-9889')).to.be.true; });
 
-> it('should return true if the phone number is a valid local american number', () => { expect(validatePhoneNumber('202-939-9889')).to.be.true; });
-
-> it('should throw an error if the given phone number is empty', () => { expect(validatePhoneNumber('')).to.throw(); });
-
+it('should throw an error if the given phone number is empty', () => { expect(validatePhoneNumber('')).to.throw(); });
+```
 > Organize test in logic suites and generate at least 4 positives tests and 2 negatives tests for each method.
 
 You can use this technique to generate code that keeps the styling code from another file. For example if you want to create sample records for music style like the Albums in albums-api>Models>Album.cs file, open it and type:
