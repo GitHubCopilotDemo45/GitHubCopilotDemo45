@@ -4,4 +4,4 @@ GitHub Copilot is an AI-powered code assistant that helps developers write bette
 
 2. Install the GitHub Copilot Chat extension
 
-3. Install the GitHub Copilot Labs extension. it contains beta features
+
